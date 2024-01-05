@@ -1,5 +1,5 @@
-<div class="border border-emerald-500 rounded-lg">
-    <a href="{{ route('surah.show') }}" class="flex items-center justify-between py-3 px-6">
+<div class="border border-emerald-500 rounded-lg group hover:bg-gray-200 hover:border-black">
+    <a href="{{ route('surah.show', $surah['nomor']) }}" class="flex items-center justify-between py-3 px-6">
         <div class="number relative">
             <div class="background bg-emerald-500 rounded-full w-12 h-12">
                 <p 
@@ -27,7 +27,7 @@
         </div>
 
         <div class="arab-name">
-            <h3 class="font-bold text-2xl">{{ $surah['nama'] }}</h3>
+            <h3 class="font-bold text-2xl font-arab">{{ $surah['nama'] }}</h3>
         </div>
     </a>
 </div>

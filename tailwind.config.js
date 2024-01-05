@@ -6,7 +6,14 @@ export default {
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontSize: {
+                md: "17px",
+            },
+            fontFamily: {
+                arab: "p294-v1",
+            },
+        },
     },
     plugins: [],
 };

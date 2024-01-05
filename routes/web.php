@@ -15,5 +15,7 @@ use App\Http\Controllers\QuranController;
 */
 
 // Route::view('/', 'index');
-Route::view('/surah/show', 'show')->name('surah.show');
+// Route::view('/surah/show', 'show')->name('surah.show');
+
 Route::get('/', [QuranController::class, 'index'])->name('surah.index');
+Route::get('/surah/{id}', [QuranController::class, 'show'])->name('surah.show');

@@ -12,9 +12,18 @@
 
 <body class="font-sans bg-gray-100">
 
-    @include('layouts.navbar')
+    <main>
+        {{-- Navbar Here --}}
+        @include('layouts.navbar')
 
-    @yield('content')
+        <div class="pt-4"> {{-- py-4, kalau nanti footer sudah dibuat file sendiri --}}
+            @yield('content')
+        </div>
+
+        {{-- Footer Here --}}
+        @include('layouts.footer')
+
+    </main>
 
 </body>
 

@@ -38,8 +38,10 @@ class QuranController extends Controller
      */
     public function show(string $id)
     {
-        $detailSurah = Http::get('https://equran.id/api/v2/surat/' . $id)->json();
-        // dump($surahQuran);   
+        $detailSurah = Http::get('https://equran.id/api/v2/surat/' . $id)->json()['data'];
+        $ayatSurah = Http::get('https://equran.id/api/v2/surat/' . $id)->json()['data']['ayat'];
+
+        return view('show', compact('detailSurah', 'ayatSurah'));
     }
 
     /**
