@@ -8,15 +8,16 @@
             </li>
 
             <li class="ml-6"> 
-                <a href="{{ route('surah.index') }}" class="hover:text-gray-200">Home</a>
+                <a 
+                    href="{{ route('surah.index') }}" 
+                    class="hover:text-gray-300 @if (Route::is('surah.index')) text-gray-300 @endif" 
+                >
+                    Home
+                </a>
             </li>
 
             <li class="ml-6">
-                <a href="#" class="hover:text-gray-200">Tafsir</a>
-            </li>
-
-            <li class="ml-6">
-                <a href="#" class="hover:text-gray-200">About</a>
+                <a href="#" class="hover:text-gray-300">About</a>
             </li>
         </ul>
 

@@ -21,12 +21,12 @@
             </div>
         </div>
 
-        <div class="detail">
+        <div class="detail w-[60%] pl-10">
             <h3 class="font-bold text-xl">{{ $surah['namaLatin'] }}</h3>
             <p class="text-sm">{{ $surah['tempatTurun'] }} - {{ $surah['jumlahAyat'] }} ayat</p>
         </div>
 
-        <div class="arab-name">
+        <div class="arab-name w-[80px] text-end">
             <h3 class="font-bold text-2xl font-arab">{{ $surah['nama'] }}</h3>
         </div>
     </a>

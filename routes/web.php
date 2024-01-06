@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuranController;
+use App\Http\Controllers\TafsirController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +18,9 @@ use App\Http\Controllers\QuranController;
 // Route::view('/', 'index');
 // Route::view('/surah/show', 'show')->name('surah.show');
 
+// Surah
 Route::get('/', [QuranController::class, 'index'])->name('surah.index');
 Route::get('/surah/{id}', [QuranController::class, 'show'])->name('surah.show');
+
+// Tafsir
+Route::get('/tafsir/{id}', [TafsirController::class, 'index'])->name('tafsir.index');
